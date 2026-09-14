@@ -78,14 +78,16 @@ body{
 }
 
 .hero-content h1{
-    font-size:5rem;
+    font-size:4rem;
     color:white;
     letter-spacing:-3px;
     font-weight:700;
     
-    text-shadow:
-        0 0 10px rgba(255,59,48,.5),
-        0 0 30px rgba(255,59,48,.3);
+   text-shadow:
+   0 0 8px rgba(255,59,48,.3);
+
+    text-transform:uppercase;
+    letter-spacing:-4px;
 }
 
 .hero-content{
