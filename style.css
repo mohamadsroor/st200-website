@@ -29,7 +29,8 @@
 body{
     background:var(--bg);
     color:var(--text);
-    font-family:Segoe UI, sans-serif;
+   font-family:'Inter', sans-serif;
+`
     line-height:1.6;
 }
 
@@ -79,6 +80,9 @@ body{
 .hero-content h1{
     font-size:5rem;
     color:white;
+    letter-spacing:-3px;
+    font-weight:700;
+    
     text-shadow:
         0 0 10px rgba(255,59,48,.5),
         0 0 30px rgba(255,59,48,.3);
