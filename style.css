@@ -1,1 +1,92 @@
+/* Reset */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Farben */
+
+:root{
+    --bg:#0f1117;
+    --card:#171923;
+    --red:#ff3b30;
+    --text:#ffffff;
+    --text-secondary:#b0b0b0;
+}
+
+/* Basis */
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:Segoe UI, sans-serif;
+    line-height:1.6;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+}
+
+.hero-content h1{
+    font-size:5rem;
+    color:white;
+}
+
+.hero-content p{
+    color:var(--text-secondary);
+    font-size:1.2rem;
+    margin-top:15px;
+}
+
+/* Button */
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 30px;
+    border-radius:999px;
+    text-decoration:none;
+    background:var(--red);
+    color:white;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* Sektionen */
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.section h2{
+    margin-bottom:30px;
+    color:var(--red);
+}
+
+/* Karten */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:var(--card);
+    padding:25px;
+    border-radius:20px;
+}
