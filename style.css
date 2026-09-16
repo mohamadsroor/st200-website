@@ -180,6 +180,10 @@ body{
     );
     border-radius:20px;
 }
+
+.progress-bar{
+    animation:loadBar 2s ease-out;
+}
 @keyframes fadeInUp{
 
     from{
