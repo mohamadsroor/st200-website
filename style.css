@@ -101,6 +101,7 @@ body{
     line-height:1;
     text-align:center;
     text-transform:uppercase;
+    white-space:nowrap;
 
     transform:translate(-50%, -50%) scale(1);
     transform-origin:center center;
@@ -109,9 +110,11 @@ body{
         0 0 8px rgba(255,59,48,0.4),
         0 0 28px rgba(255,59,48,0.22);
 
-    white-space:nowrap;
     pointer-events:none;
     will-change:top, transform;
+
+    animation:titleStart 1.4s cubic-bezier(.22, 1, .36, 1);
+}
 }
 .hero-title.title-docked{
     text-shadow:
@@ -125,7 +128,7 @@ body{
     position:relative;
     z-index:5;
     padding-top:150px;
-    animation:fadeInUp 1.2s ease;
+    animation:fadeInUp 1.2s ease .5s both;
 }
 
 
@@ -233,5 +236,20 @@ body{
 
     .hero-content{
         padding-top:120px;
+    }
+}
+
+@keyframes titleStart{
+
+    from{
+        opacity:0;
+        filter:blur(12px);
+        letter-spacing:12px;
+    }
+
+    to{
+        opacity:1;
+        filter:blur(0);
+        letter-spacing:-4px;
     }
 }
