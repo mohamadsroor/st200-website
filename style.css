@@ -86,19 +86,40 @@ body{
 }
 
 .hero-content h1{
-    font-size:4rem;
-    color:white;
-    letter-spacing:-3px;
-    font-weight:700;
-    
-   text-shadow:
-   0 0 8px rgba(255,59,48,.3);
+    position:fixed;
+    top:0;
+    left:50%;
+    z-index:1000;
 
-    text-transform:uppercase;
+    width:max-content;
+    max-width:90vw;
+
+    font-size:clamp(2.6rem, 7vw, 5rem);
+    font-weight:700;
     letter-spacing:-4px;
+    text-transform:uppercase;
+    color:white;
+
+    transform-origin:center center;
+
+    text-shadow:
+        0 0 8px rgba(255,59,48,.35),
+        0 0 30px rgba(255,59,48,.18);
+
+    will-change:transform;
+}
+
+.hero-content h1.title-docked{
+    text-shadow:
+        0 0 8px rgba(255,59,48,.45);
+
+    backdrop-filter:blur(12px);
 }
 
 .hero-content{
+    position:relative;
+    z-index:5;
+    padding-top:120px;
     animation:fadeInUp 1.2s ease;
 }
 
@@ -198,3 +219,15 @@ body{
     }
 }
 
+@media (max-width:700px){
+
+    .hero-content h1{
+        font-size:2.7rem;
+        letter-spacing:-2px;
+        white-space:nowrap;
+    }
+
+    .hero-content{
+        padding-top:100px;
+    }
+}
