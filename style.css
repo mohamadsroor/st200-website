@@ -43,11 +43,20 @@ body{
     align-items:center;
     text-align:center;
     padding:40px;
-    
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.80)
+    ),
+    url('st200-top.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
     position:relative;
     overflow:hidden;
-
-   
 }
 
 .hero::before{
