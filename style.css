@@ -107,6 +107,8 @@ body{
     color:var(--text-secondary);
     font-size:1.2rem;
     margin-top:15px;
+    position:relative;
+    z-index:5;
 }
 
 /* Button */
@@ -155,6 +157,7 @@ body{
     padding:25px;
     border-radius:20px;
     transition:all .3s ease;
+    cursor:pointer;
 }
 
 .card:hover{
@@ -181,9 +184,7 @@ body{
     border-radius:20px;
 }
 
-.progress-bar{
-    animation:loadBar 2s ease-out;
-}
+
 @keyframes fadeInUp{
 
     from{
