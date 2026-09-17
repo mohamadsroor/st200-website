@@ -253,3 +253,57 @@ body{
         letter-spacing:-4px;
     }
 }
+
+
+
+
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:999;
+
+    display:flex;
+    justify-content:center;
+    gap:50px;
+
+    padding:25px;
+
+    background:rgba(0,0,0,0.3);
+    backdrop-filter:blur(10px);
+}
+
+
+
+.navbar a::after{
+
+    content:'';
+
+    position:absolute;
+
+    left:50%;
+    transform:translateX(-50%);
+
+    bottom:-6px;
+
+    width:0;
+    height:2px;
+
+    background:#ff3b30;
+
+    transition:width .3s ease;
+}
+.navbar a{
+    position:relative;
+
+    color:white;
+    text-decoration:none;
+
+    font-weight:500;
+}
+
+.navbar a:hover::after{
+
+    width:100%;
+}
+
